@@ -1,0 +1,92 @@
+/* selector universal borra todos los márgenes q agrega el navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: ##FDF2E9;
+    font-size: 16px;
+    font-family: "Krona One", sans-serif;
+}
+
+/* 20 PX  ARRIBA Y ABAJO PARA CENTRAR */
+
+header,
+.main,
+footer {
+    width: 95%;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+
+/* OCULTAR EL CONTENIDO QUE SOBREPASA EL CONTENEDOR-LIMPIA LOS FLOAT LEFT*/
+
+header nav {
+    background: #EB984E;
+    overflow: hidden;
+}
+
+/*QUITAR PUNTOS EN LISTA  */
+
+header nav ul {
+    list-style: none;
+}
+
+/*SE APILAN HACIA LA IZQUIERDA Y TODOS LOS ELEMENTOS SE AFECTAN */
+
+header nav ul li {
+    float: LEFT;
+}
+
+/*DISPLAY BLOCK PODEMOS PERMITIR EL PADING HACIA ARRIBA Y ABAJO SINO SOLO FUNCIONA HACIA LOS LADOS */
+
+header nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: rgb(19, 22, 201);
+    text-decoration-style: double;
+    
+}
+
+/* CAMBIAR EL FONDO DEL LINK O PESTAÑA CUANDO SE PONE EL MOUSE */
+header nav ul li a:hover {
+    background: #9e9c3a;
+}
+
+.main .articulos {
+    width: 68%;
+    margin-right: 2%;
+    float: left;
+}
+
+.main .articulos article {
+    padding: 20px;
+    background: rgb(238, 155, 31);
+    margin-bottom: 20px;
+}
+
+/* border-box, EL ANCHO Y EL ALTO SE CALCULAN TENIENDO EN CUENTA EL CONTENIDO Y TAMBIÉN EL BORD Y EL PADDING.  ES DECIR, EL BORDER Y EL PADDING ESTÁN INCLUÍDOS EN EL ANCHO Y ALTO*/
+
+aside {
+    width: 30%;
+    background: #ff8000;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+}
+
+/*CLEAR: BOTH LIMPIAR EL FLOAT: LEFT */
+footer{
+    background: #000;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 10px;
+}
